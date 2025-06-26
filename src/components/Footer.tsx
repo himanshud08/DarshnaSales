@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container mx-auto">
         <div className="flex flex-wrap border-b border-neutral-700">
           <div className="w-full sm:w-1/2 lg:w-6/12 p-4">
-            <h2>Darshana Sales Enterprises</h2>
+            <h2>Darshna Sales Enterprises</h2>
             <p className="lg:max-w-sm py-8 text-sm">{FOOTER.description}</p>
           </div>
 
