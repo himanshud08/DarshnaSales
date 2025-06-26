@@ -1,12 +1,4 @@
-
-
-export const NAV_LINKS = [
-    { title: "Featured", url: "/" },
-    { title: "Services", url: "#Services" },
-    { title: "About", url: "#AboutUs" },
-  ];
-  
-  export const HERO = {
+export const HERO = {
     title: "Darshna Sales Corporation",
     description:
       "We are the importers and distributors of Hydraulic and pneumatic sealing products from many renowed brands such as Guarnitec, technolan, technotex and Technoleo for Indian market. Our company's growth is driven by three key factors: Quality,Reliability, and Durability.",
