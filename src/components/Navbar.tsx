@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         {/* Center: Brand Name */}
         <div className="absolute left-1/2 -translate-x-1/2">
           <span className="text-2xl lg:text-3xl font-bold tracking-wide text-white">
-            Darshana Sales Corporation
+            Darshna Sales Corporation
           </span>
         </div>
 
