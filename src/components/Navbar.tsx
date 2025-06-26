@@ -1,7 +1,6 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import Link from "next/link";
 import Image from "next/image";
 
 const Navbar: React.FC = () => {
