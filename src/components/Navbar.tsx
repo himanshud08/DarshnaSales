@@ -1,7 +1,6 @@
 "use client";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { NAV_LINKS } from "@/constants";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -27,21 +26,6 @@ const Navbar: React.FC = () => {
           </span>
         </div>
 
-        {/* Right: Desktop Nav */}
-        <div className="hidden lg:flex">
-          <ul className="flex items-center gap-8">
-            {NAV_LINKS.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.url}
-                  className="text-lg text-white hover:text-gray-400 transition-colors"
-                >
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
 
         {/* Mobile Toggle */}
         <div className="flex lg:hidden text-white">
@@ -50,25 +34,6 @@ const Navbar: React.FC = () => {
           </button>
         </div>
       </div>
-
-      {/* Mobile Drawer */}
-      {mobileDrawerOpen && (
-        <div className="mt-2 bg-black rounded-md px-6 py-4 lg:hidden">
-          <ul className="flex flex-col items-center space-y-4">
-            {NAV_LINKS.map((item, index) => (
-              <li key={index}>
-                <Link
-                  href={item.url}
-                  className="text-lg text-white hover:text-gray-400 transition-colors"
-                  onClick={() => setMobileDrawerOpen(false)}
-                >
-                  {item.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
     </nav>
   );
 };
